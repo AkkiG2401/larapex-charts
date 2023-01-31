@@ -557,7 +557,7 @@ class LarapexChart
         }
 
         return [
-            'height' => $this->height(),
+            'height' => '"'.$this->height().'"',
             'width' => $this->width(),
             'type' => $this->type(),
             'options' => $options,
