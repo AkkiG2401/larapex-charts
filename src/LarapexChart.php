@@ -147,7 +147,7 @@ class LarapexChart
         return $this;
     }
 
-    public function setHeight(int $height) :LarapexChart
+    public function setHeight($height) :LarapexChart
     {
         $this->height = $height;
         return $this;
