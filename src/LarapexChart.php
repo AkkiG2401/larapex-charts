@@ -375,7 +375,7 @@ class LarapexChart
     /**
      * @return int
      */
-    public function height() :int
+    public function height()
     {
         return $this->height;
     }
