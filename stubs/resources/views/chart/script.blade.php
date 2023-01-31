@@ -3,7 +3,7 @@
     {
         chart: {
             type: '{!! $chart->type() !!}',
-            height: {!! $chart->height() !!},
+            height: '{!! $chart->height() !!}',
             width: '{!! $chart->width() !!}',
             toolbar: {!! $chart->toolbar() !!},
             zoom: {!! $chart->zoom() !!},
