@@ -28,7 +28,10 @@
             align: '{!! $chart->subtitlePosition() !!}'
         },
         xaxis: {
-            categories: {!! $chart->xAxis() !!}
+            categories: {!! $chart->xAxis() !!},
+			@if ($chart->ticks())
+			tickAmount: {!! $chart->ticks() !!},
+			@endif
         },
         grid: {!! $chart->grid() !!},
         markers: {!! $chart->markers() !!},
