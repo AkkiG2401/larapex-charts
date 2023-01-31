@@ -19,6 +19,7 @@ class LarapexChart
     protected $title;
     protected $subtitle;
     protected $subtitlePosition;
+    protected $ticks;
     protected $type = 'donut';
     protected $labels;
     protected $fontFamily;
@@ -248,7 +249,12 @@ class LarapexChart
         $this->zoom = json_encode(['enabled' => $zoom ? $zoom : false]);
         return $this;
     }
-
+	
+    public function setTicks(int $amount) :LarapexChart
+    {
+        $this->ticks = $amount;
+        return $this;
+    }
     public function setDataLabels(bool $enabled = true) :LarapexChart
     {
         $this->dataLabels = json_encode(['enabled' => $enabled]);
@@ -332,6 +338,10 @@ class LarapexChart
         return $this->subtitlePosition;
     }
 
+    public function ticks()
+    {
+        return $this->ticks;
+    }
     /**
      * @return string
      */
